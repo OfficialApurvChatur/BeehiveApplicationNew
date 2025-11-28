@@ -12,11 +12,11 @@ const brandConnection = {
 
   iEmailName: "@beehive.com",
 
-  jInstagramURL: "https://www.instagram.com/beehive.corporation/",
-  kXURL: "https://x.com/beehive_corp",
-  lThreadsURL: "https://www.threads.com/@beehive.corporation",
-  mLinkedinURL: "https://www.linkedin.com/in/beehive-corporation-74893b2a7/",
-  nGithubURL: "https://github.com/ApurvChatur/ArionApplication?tab=readme-ov-file#administration-installation/",
+  jInstagramURL: "https://www.google.com",
+  kXURL: "https://www.google.com",
+  lThreadsURL: "https://www.google.com",
+  mLinkedinURL: "https://www.google.com",
+  nGithubURL: "https://www.google.com",
 
   get oBackendBaseURL() {
     return process.env.ENVIRONMENT === "Production"
