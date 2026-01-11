@@ -1,16 +1,16 @@
 const brandConnection = {
-  aBrandID: "boilerplate",
-  bBrandName: "Boilerplate",
+  aBrandID: "beehive",
+  bBrandName: "Beehive Corporation",
 
-  cFrontendApplicationName: "Boilerplate Frontend",
-  dAdministrationApplicationName: "Boilerplate Administration",
-  eBackendApplicationName: "Boilerplate Backend",
+  cFrontendApplicationName: "Beehive Frontend",
+  dAdministrationApplicationName: "Beehive Administration",
+  eBackendApplicationName: "Beehive Backend",
 
-  fFrontendApplicationURL: "https://boilerplate-frontend-v02.netlify.app",
-  gAdminApplicationURL: "https://boilerplate-admin-v02.netlify.app",
-  hBackendApplicationURL: "https://boilerplate-backend-v02.netlify.app",
+  fFrontendApplicationURL: "https://beehive-frontend-v02.netlify.app",
+  gAdminApplicationURL: "https://beehive-admin-v02.netlify.app",
+  hBackendApplicationURL: "https://beehive-backend-v02.netlify.app",
 
-  iEmailName: "@boilerplate.com",
+  iEmailName: "@beehive.com",
 
   jInstagramURL: "https://www.google.com/",
   kXURL: "https://www.google.com/",
@@ -24,7 +24,7 @@ const brandConnection = {
       : this.pBackendLocalURL;
   },
   pBackendLocalURL: "http://localhost:8000",
-  qBackendProductionURL: "https://boilerplate-backend-v02.onrender.com",
+  qBackendProductionURL: "https://beehive-backend-v02.onrender.com",
 
   get rFrontendBaseURL() {
     return process.env.ENVIRONMENT === "Production" ? [ 
@@ -51,10 +51,10 @@ const brandConnection = {
   sFrontendLocalURL7: "http://localhost:5179",
   sFrontendLocalURL8: "http://localhost:5180",
   sFrontendLocalURL9: "http://localhost:5181",
-  tFrontendProductionURL1: "https://boilerplate-admin-v02.netlify.app",
-  tFrontendProductionURL2: "https://boilerplate-frontend-v02.netlify.app",
+  tFrontendProductionURL1: "https://beehive-admin-v02.netlify.app",
+  tFrontendProductionURL2: "https://beehive-frontend-v02.netlify.app",
 
-  uTagName: "Skip setup. Start building.",
+  uTagName: "Infinite Wonder Awaits",
 }
 
 export default brandConnection;
