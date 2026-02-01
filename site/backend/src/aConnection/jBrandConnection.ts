@@ -55,6 +55,11 @@ const brandConnection = {
   tFrontendProductionURL2: "https://beehive-frontend-v02.netlify.app",
 
   uTagName: "Infinite Wonder Awaits",
+
+  vMainApplication: "Beehive Application",
+  vFrontendApplication: "Beehive Application (Frontend)",
+  vAdminApplication: "Beehive Application (Admin)",
+  vBackendApplication: "Beehive Application (Backend)",
 }
 
 export default brandConnection;
