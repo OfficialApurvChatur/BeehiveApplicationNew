@@ -23,11 +23,11 @@ const AuthenticatedLayout = () => {
   }
 
   // All Renders
-	// 1. First Render
-	useEffect(() => {
+  // 1. First Render
+  useEffect(() => {
     if (!(reduxCall.state.receivedObject as any)?.AccountRetrieve?.eAccountStatus) return;
 
-		(
+    (
       (reduxCall.state.receivedObject as any)?.AccountRetrieve?.eAccountStatus === "Verified" && 
       (reduxCall.state.receivedObject as any)?.AccountRetrieve?._id
     ) ? (
@@ -38,19 +38,16 @@ const AuthenticatedLayout = () => {
       !(reduxCall.state.receivedObject as any)?.AccountRetrieve?._id
     ) ? (
 
-      pathname === fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.aSignInRoute ?
-        navigate(fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.aSignInRoute) :
-      pathname === fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.bSignUpRoute ?
-        navigate(fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.bSignUpRoute) :
-      pathname === fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.cForgotPasswordRoute ?
-        navigate(fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.cForgotPasswordRoute) :
+      pathname === fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.aSignInRoute ||
+      pathname === fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.bSignUpRoute ||
+      pathname === fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.cForgotPasswordRoute ||
       pathname.startsWith(fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.dResetPasswordRoute) ?
-        navigate(fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.aSignInRoute) :
+      null :
       navigate(fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.aSignInRoute)
       
     ) : null
     
-	}, [pathname, (reduxCall.state.receivedObject as any)?.AccountRetrieve?.eAccountStatus])
+  }, [pathname, (reduxCall.state.receivedObject as any)?.AccountRetrieve?.eAccountStatus])
     
   // JSX
   return (

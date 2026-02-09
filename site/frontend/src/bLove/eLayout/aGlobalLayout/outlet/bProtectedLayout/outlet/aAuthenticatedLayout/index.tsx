@@ -38,14 +38,11 @@ const AuthenticatedLayout = () => {
       !(reduxCall.state.receivedObject as any)?.AccountRetrieve?._id
     ) ? (
 
-      pathname === fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.aSignInRoute ?
-        navigate(fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.aSignInRoute) :
-      pathname === fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.bSignUpRoute ?
-        navigate(fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.bSignUpRoute) :
-      pathname === fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.cForgotPasswordRoute ?
-        navigate(fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.cForgotPasswordRoute) :
+      pathname === fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.aSignInRoute ||
+      pathname === fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.bSignUpRoute ||
+      pathname === fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.cForgotPasswordRoute ||
       pathname.startsWith(fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.dResetPasswordRoute) ?
-        navigate(fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.aSignInRoute) :
+      null :
       navigate(fullRoute.aGlobalRoute.bProtectedRoute.aAutheticatedRoute.aSignInRoute)
       
     ) : null
